@@ -1,7 +1,7 @@
-import background from "../../assets/sidebar-bg.jpg"
 import { Container } from "./style"
 import { PencilLine } from "phosphor-react";
 import { Avatar } from "../Avatar";
+import background from "../../assets/sidebar-bg.jpg"
 
 export function Sidebar(){
     return(

@@ -5,7 +5,12 @@ import { BsDot } from 'react-icons/bs'
 import { Avatar } from "../Avatar";
 import { useState } from 'react'
 
-export function Comment({content, onDeleteComment}){
+interface CommentProps{
+    content: string;
+    onDeleteComment: (content: string) => void
+}
+
+export function Comment({content, onDeleteComment}: CommentProps){
 
     const [likeCount, setLikeCount] = useState(0)
 

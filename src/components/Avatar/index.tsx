@@ -1,6 +1,11 @@
 import { Container } from "./style"
 
-export function Avatar({src, hasBorder}){
+interface AvatarProps{
+    src: string;
+    hasBorder: boolean;
+}
+
+export function Avatar({src, hasBorder}: AvatarProps){
     return(
         <Container src={src} hasBorder={hasBorder} alt="" />
     )

@@ -6,23 +6,16 @@ import ptBR from 'date-fns/locale/pt-BR'
 import { FormEvent, useState } from "react"
 
  
-export interface Author{
+interface Author{
     avatarUrl: string;
     name: string;
     role: string
-  }
+}
 
-  export interface Content{
+interface Content{
     type: string;
     content: string;
-  }
-
-  export interface Post{
-    id: number;
-    author: Author;
-    content: Content[];
-    publishedAt: Date;
-  }
+}
 
 interface PostProps{
     author: Author;
